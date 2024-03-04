@@ -1,0 +1,191 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+body.night-mode h1 {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+#nightModeToggle {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Night Mode Styles */
+body.night-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+#container.night-mode {
+  background-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+button.night-mode {
+  background-color: #3498db;
+}
+
+button.night-mode:hover {
+  background-color: #2980b9;
+}
+
+li.night-mode {
+  border: 1px solid #555;
+}
+
+/* Additional styles for night mode can be added as needed */
+/* ... (previous CSS code) */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4caf50;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Update this block to set the background color in night mode */
+body.night-mode .slider {
+  background-color: #2196f3;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+  right: 0;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: #fff;
+}
+
+/* ... (remaining CSS code) */
+/* Existing styles above... */
+
+li {
+  display: flex;
+  justify-content: space-between; /* Add this to align items on the horizontal axis */
+  align-items: center; /* Add this to align items on the vertical axis */
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+li span {
+  flex-grow: 1; /* This allows the text to take up all available space */
+}
+
+.deleteBtn {
+  background-color: #ff6961;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Night Mode Styles for deleteBtn hover */
+body.night-mode .deleteBtn:hover {
+  background-color: #992600; /* Change this color to the desired night mode hover color */
+}
+
+.deleteBtn:hover {
+  background-color: #ff3d00; /* Change this color to the desired night mode hover color */
+}
+
+/* Night Mode Styles for li */
+li.night-mode {
+  border: 1px solid #555;
+  background-color: #555; /* Add background color for night mode */
+}
+
+/* ... (remaining CSS code) */
