@@ -1,1 +1,1 @@
-simple to-do list created with HTML, CSS & JS
+https://alljay213.github.io/to-do-list/
